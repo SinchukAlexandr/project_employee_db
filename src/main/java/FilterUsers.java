@@ -33,7 +33,6 @@ public class FilterUsers extends HttpServlet {
                     " INNER JOIN contacts ON users.id = contacts.id)" +
                     " AS TWD WHERE total<'" + total_work_days + "'");
 
-
             printWriter.println("<style>" +
                     " .b3 {background: #d6d2d1; height: 35px; font-family: 'Arial'; font-size: 11pt;}" +
                     " .b4 {background: #ffffff; font-family: 'Arial'; font-size: 10pt;}" +
