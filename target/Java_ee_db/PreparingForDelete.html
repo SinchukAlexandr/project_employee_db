@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PreparingForDelete</title>
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 12px;
+            padding-top: 100px;
+            padding-left: 430px;
+            padding-right: 430px;
+        }
+
+        .center {
+            width: 500px; /* Ширина элемента в пикселах */
+            padding: 30px; /* Поля вокруг текста */
+            margin: auto; /* Выравниваем по центру */
+            background: #f7f6f5; /* Цвет фона */
+            border-style: solid;
+            border-color: #cecac8;
+            border-radius: 10px;
+            height: 170px;
+            width: 500px;
+        }
+
+        h1 {
+            font-family: Arial;
+            font-size: 20px;
+            background: #fc6666; /* Цвет фона под заголовком */
+            color: #ffffff; /* Цвет текста */
+            padding: 10px;
+            border-radius: 10px; /* Для современных браузеров */
+        }
+
+        A {
+            font-family: Arial;
+            color: #000000; /* Цвет текста */
+            background: #c1c1c1; /* Цвет фона */
+            padding: 8px;
+            border-radius: 7px;
+            text-decoration: none;
+            margin: 30px;
+        }
+
+        A:hover {
+            border: 2px solid #00b259;
+            background: #bae1c0;
+            color: black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<script>
+    document.onload = function (event) {
+        var head = document.querySelector("h3");
+        head.innerText = window.location.search.slice(1);
+    }
+</script>
+
+<div class="center">
+    <h1 align="center">Вы хотите удалить данные сотрудника</h1>
+    <br>
+    <br>
+    <h2 align="center"><a href="" id="id_yes" align="center">&nbsp;&nbsp;&nbsp;&nbsp;Да&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="" id="id_no">&nbsp;&nbsp;&nbsp;Нет&nbsp;&nbsp;&nbsp;</a></h2>
+</div>
+<script>
+    var searchQuery = window.location.search;
+    document.getElementById('id_yes').setAttribute('href', 'DeleteUsers' + searchQuery);
+    document.getElementById('id_no').setAttribute('href', 'RootPage.html');
+</script>
+
+</body>
+</html>

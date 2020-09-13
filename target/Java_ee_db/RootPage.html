@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RootPage</title>
+    <style>
+        body {
+            margin: 60px;
+            font-size: 20pt;
+            font-family: Arial;
+            align: center;
+        }
+
+        .center {
+            width: 500px; /* Ширина элемента в пикселах */
+            padding: 30px; /* Поля вокруг текста */
+            margin: auto; /* Выравниваем по центру */
+            background: #f7f6f5; /* Цвет фона */
+            border-style: solid;
+            border-color: #cecac8;
+            border-radius: 10px;
+            height: 470px;
+            width: 500px;
+        }
+
+        .center1 {
+            align: center;
+            width: 500pt; /* Ширина элемента в пикселах */
+            padding: 27px; /* Поля вокруг текста */
+            margin: auto; /* Выравниваем по центру */
+            background: #e2f3f9; /* Цвет фона */
+            border-radius: 10px;
+            height: 220px;
+            width: 445px;
+        }
+
+        .b1 {
+            border: 2px solid #00b259;
+            background: #bae1c0;
+            color: black;
+            border-radius: 5px;
+            height: 50px;
+            width: 500px;
+            font-size: 14pt;
+        }
+
+        .b2 {
+            align: center;
+            border: 2px solid #0099d2;
+            background: #63d5ff;
+            color: black;
+            border-radius: 5px;
+            height: 38px;
+            width: 440px;
+            font-size: 14pt;
+        }
+
+        .b3 {
+            border: 2px solid #979797;
+            background: #d6d2d1;
+            color: black;
+            border-radius: 5px;
+            height: 50px;
+            width: 500px;
+            font-size: 14pt;
+        }
+
+        #user {
+            width: 90px;
+            font-size: 16pt;
+        }
+
+        .b1:hover {
+            background-color: #3c6d24; /* Цвет фона при наведении */
+            color: #fff; /* Цвет текста при наведении */
+        }
+
+        .b2:hover {
+            background-color: #207b9a; /* Цвет фона при наведении */
+            color: #fff; /* Цвет текста при наведении */
+        }
+
+        .b3:hover {
+            background-color: #979797; /* Цвет фона при наведении */
+            color: #fff; /* Цвет текста при наведении */
+        }
+    </style>
+</head>
+<body>
+<div class="center">
+    <form action="SeeAllUsers" method="get">
+        <input type="submit" class="b1" value="Просмотреть данные всех сотрудников">
+    </form>
+    <br>
+
+    <br>
+    <form action="AddUser.html" method="get">
+        <input type="submit" class="b3" value="Добавить нового сотрудника">
+    </form>
+
+    <br>
+    <div class="center1">
+        <form action="FilterUsers" method="get">
+            <div align="center"> Сотрудники, которые проработали<br>
+                меньше указанного количества дней
+                <pre><input type="text" pattern="([0-9]+)" name='total_work_days' autofocus id="user" required></pre>
+            </div>
+            <input type="submit" class="b2" value="Выбрать сотрудников">
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
