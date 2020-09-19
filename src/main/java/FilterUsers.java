@@ -91,13 +91,13 @@ public class FilterUsers extends HttpServlet {
             printWriter.println("<div class=raz>");
             printWriter.println("<table align='center' class= 'b4'>");
             printWriter.println("<thead>");
-            printWriter.println("<tr align='center' class= b3>" + "<th align='center'>" + "<b>" + "id" + "</th>"
-                    + "<th>" + "<b>" + "name" + "</th>" + "<th align='center'>" + "<b>" + "login" + "</th>"
-                    + "<th>" + "<b>" + "password" + "</th>" + "<th>" + "<b>" + "birthday_date" + "</th>"
-                    + "<th>" + "<b>" + "work_date" + "</th>" + "<th>" + "<b>" + "inn" + "</th>" + "<th>" + "<b>" + "salary" + "</th>"
-                    + "<th>" + "<b>" + "mobile_number" + "</th>" + "<th>" + "<b>" + "e_mail" + "</th>"
-                    + "<th>" + "<b>" + "age_of_employee" + "</th>"
-                    + "<th>" + "<b>" + "total_work_days" + "</th>" + "</tr>");
+            printWriter.println("<tr class=b3 align='center'>" + "<th align='center'>" + "id" + "</th>" + "<th>" + "ФИО" + "</th>"
+                    + "<th>" + "Логин" + "</th>" + "<th>" + "Пароль" + "</th>"
+                    + "<th>" + "Дата рождения" + "</th>" + "<th>" + "Дата приема на работу" + "</th>"
+                    + "<th>" + "ИНН" + "</th >" + "<th>" + "Заработная плата" + "</td>"
+                    + "<th>" + "Номер телефона" + "</th>" + "<th>" + "e_mail" + "</th>"
+                    + "<th>" + "Возраст (полных лет)" + "</th>"
+                    + "<th>" + "Всего отработано дней" + "</th>" + "</tr>");
             printWriter.println("<tbody>");
             while (resultSet.next()) {
                 printWriter.println("<tr>"
