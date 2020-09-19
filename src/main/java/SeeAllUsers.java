@@ -108,13 +108,13 @@ public class SeeAllUsers extends HttpServlet {
             printWriter.println("<br>");
             printWriter.println("<div class=raz>");
             printWriter.println("<table class=b4 align='center'>");
-            printWriter.println("<tr class=b3 align='center'>" + "<th align='center'>" + "<b>" + "id" + "</th>" + "<th>" + "<b>" + "name" + "</th>"
-                    + "<th>" + "<b>" + "login" + "</th>" + "<th>" + "<b>" + "password" + "</th>"
-                    + "<th>" + "<b>" + "birthday_date" + "</th>" + "<th>" + "<b>" + "work_date" + "</th>"
-                    + "<th>" + "<b>" + "inn" + "</th >" + "<th>" + "<b>" + "salary" + "</td>"
-                    + "<th>" + "<b>" + "mobile_number" + "</th>" + "<th>" + "<b>" + "e_mail" + "</th>"
-                    + "<th>" + "<b>" + "age_of_employee" + "</th>"
-                    + "<th>" + "<b>" + "update_employee" + "</th>" + "<th>" + "<b>" + "delete_employee" + "</th>" + "</tr>");
+            printWriter.println("<tr class=b3 align='center'>" + "<th align='center'>" + "id" + "</th>" + "<th>" + "ФИО" + "</th>"
+                    + "<th>" + "Логин" + "</th>" + "<th>" + "Пароль" + "</th>"
+                    + "<th>" + "Дата рождения" + "</th>" + "<th>" + "Дата приема на работу" + "</th>"
+                    + "<th>" + "ИНН" + "</th >" + "<th>" + "Заработная плата" + "</td>"
+                    + "<th>" + "Номер телефона" + "</th>" + "<th>" + "e_mail" + "</th>"
+                    + "<th>" + "Возраст (полных лет)" + "</th>"
+                    + "<th>" + "Обновить данные" + "</th>" + "<th>" + "Удалить данные" + "</th>" + "</tr>");
             printWriter.println("</div>");
             while (resultSet.next()) {
                 printWriter.println("<tr>"
