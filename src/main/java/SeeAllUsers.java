@@ -113,7 +113,7 @@ public class SeeAllUsers extends HttpServlet {
                     + "<th>" + "Дата рождения" + "</th>" + "<th>" + "Дата приема на работу" + "</th>"
                     + "<th>" + "ИНН" + "</th >" + "<th>" + "Заработная плата" + "</td>"
                     + "<th>" + "Номер телефона" + "</th>" + "<th>" + "e_mail" + "</th>"
-                    + "<th>" + "Возраст (полных лет)" + "</th>"
+                    + "<th>" + "Возраст"+"<br>"+"(полных&nbspлет)" + "</th>"
                     + "<th>" + "Обновить данные" + "</th>" + "<th>" + "Удалить данные" + "</th>" + "</tr>");
             printWriter.println("</div>");
             while (resultSet.next()) {
@@ -122,10 +122,10 @@ public class SeeAllUsers extends HttpServlet {
                         + "<td>" + resultSet.getString("name") + "</td>"
                         + "<td>" + resultSet.getString("login") + "</td>"
                         + "<td>" + resultSet.getString("password") + "</td>"
-                        + "<td>" + resultSet.getString("birthday_date") + "</td>"
-                        + "<td>" + resultSet.getString("work_date") + "</td>"
+                        + "<td align='center'>" + resultSet.getString("birthday_date") + "</td>"
+                        + "<td align='center'>" + resultSet.getString("work_date") + "</td>"
                         + "<td>" + resultSet.getString("inn") + "</td>"
-                        + "<td>" + resultSet.getString("salary") + "</td>"
+                        + "<td align='center'>" + resultSet.getString("salary") + "</td>"
                         + "<td>" + resultSet.getString("mobile_number") + "</td>"
                         + "<td>" + resultSet.getString("e_mail") + "</td>"
                         + "<td align='center'>" + resultSet.getString("age") + "</td>"
