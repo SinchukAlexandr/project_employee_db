@@ -113,7 +113,7 @@ public class SeeAllUsers extends HttpServlet {
                     + "<th>" + "Дата рождения" + "</th>" + "<th>" + "Дата приема на работу" + "</th>"
                     + "<th>" + "ИНН" + "</th >" + "<th>" + "Заработная плата" + "</td>"
                     + "<th>" + "Номер телефона" + "</th>" + "<th>" + "e_mail" + "</th>"
-                    + "<th>" + "Возраст"+"<br>"+"(полных&nbspлет)" + "</th>"
+                    + "<th>" + "Возраст" + "<br>" + "(полных&nbspлет)" + "</th>"
                     + "<th>" + "Обновить данные" + "</th>" + "<th>" + "Удалить данные" + "</th>" + "</tr>");
             printWriter.println("</div>");
             while (resultSet.next()) {
@@ -140,9 +140,9 @@ public class SeeAllUsers extends HttpServlet {
             printWriter.println("</table>");
             printWriter.println("<div id = footer1>");
             printWriter.println("<table class=b6>");
-            printWriter.println("<tr>" +"<td align= 'left'>" + "<br><form action=\"AddUser.html\" method=\"get\">"
-                    +"<input type=\"submit\" class=\"b5\" style=\"margin-right: 5px\" value=\"Экспорт в Excel\"></form>"+"</td>"
-                    +"<td align= 'center'><a href = 'http://localhost:8081/RootPage.html'>На главную</a></td>"
+            printWriter.println("<tr>" + "<td align= 'left'>" + "<br><form action=\"WriteSheetExcel\" method=\"get\">"
+                    + "<input type=\"submit\" class=\"b5\" style=\"margin-right: 5px\" value=\"Экспорт в Excel\"></form>" + "</td>"
+                    + "<td align= 'center'><a href = 'http://localhost:8081/RootPage.html'>На главную</a></td>"
 //                    "<td align= 'top'><a href = 'http://localhost:8081/RootPage.html'>На главную</a></td>"
 //                    +"<td align= 'right'>" + "<br><form action=\"AddUser.html\" method=\"get\">"
 //                    +"<input type=\"submit\" class=\"b5\" style=\"margin-right: 5px\" value=\"Экспорт в Excel\"></form>"+"</td>"
