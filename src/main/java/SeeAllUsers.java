@@ -42,7 +42,7 @@ public class SeeAllUsers extends HttpServlet {
                     "       width: 200px; font-size: 10pt;}" +
                     " .b5:hover{background-color: #979797; color: #fff;}" +
 
-                    " .b6 {border: 0px; background: #f0efee; width: 100%; color: font-size: 9pt;}" +
+                    " .b6 {border: 0px; background: #f0efee; width: 100%; font-size: 9pt;}" +
 
                     " #footer1 {\n" +
                     "    position: fixed;/* Фиксированное положение */\n" +
@@ -54,7 +54,6 @@ public class SeeAllUsers extends HttpServlet {
                     "   }" +
 
                     " #footer2 {\n" +
-//                    "   position: fixed;/* Фиксированное положение */\\n\" +"+
                     "   left: 0; bottom: 0; /* Левый нижний угол */\n" +
                     "   padding: 1px; /* Поля вокруг текста */\n" +
                     "   background: #cecac8; /* Цвет фона */\n" +
@@ -69,12 +68,11 @@ public class SeeAllUsers extends HttpServlet {
                     " .rightstr {" +
                     "    text-align: right; /* Выравнивание по правому краю */" +
                     "   }" +
-
                     " .raz {\n" +
-                    "  border: 0px solid #e2e0df;}\n" +
+                    "  border: 0px; solid #e2e0df;}\n" +
                     " .raz th {\n" +
                     "  position: sticky;\n" +
-                    "  top: 4.9em;\n" +
+                    "  top: 4.3em;\n" +
                     "  background: #d6d2d1; border: 1px; solid #ffffff;\n" +
                     "   }" +
 
@@ -143,9 +141,6 @@ public class SeeAllUsers extends HttpServlet {
             printWriter.println("<tr>" + "<td align= 'left'>" + "<br><form action=\"WriteSheetExcel\" method=\"get\">"
                     + "<input type=\"submit\" class=\"b5\" style=\"margin-right: 5px\" value=\"Экспорт в Excel\"></form>" + "</td>"
                     + "<td align= 'center'><a href = 'http://localhost:8081/RootPage.html'>На главную</a></td>"
-//                    "<td align= 'top'><a href = 'http://localhost:8081/RootPage.html'>На главную</a></td>"
-//                    +"<td align= 'right'>" + "<br><form action=\"AddUser.html\" method=\"get\">"
-//                    +"<input type=\"submit\" class=\"b5\" style=\"margin-right: 5px\" value=\"Экспорт в Excel\"></form>"+"</td>"
                     + "<td align= 'right'>" + "<br><form action=\"AddUser.html\" method=\"get\">" +
                     "<input type=\"submit\" class=\"b5\" style=\"margin-right: 5px\" value=\"Добавить нового сотрудника\"></form>" + "</td>" + "</tr>");
             printWriter.println("</table>");
